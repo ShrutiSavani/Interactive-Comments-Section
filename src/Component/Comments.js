@@ -268,9 +268,9 @@ const Comments = () => {
             <>
               <div className='received-msg'>
                 <div className='score-count'>
-                  <img src='images/icon-plus.svg' className='plus-img' onClick={() => onIcrement(comment.id)} />
+                <img src='images/icon-minus.svg' className='minus-img' onClick={() => onDecrement(comment.id)} />
                   <p>{comment.score}</p>
-                  <img src='images/icon-minus.svg' className='minus-img' onClick={() => onDecrement(comment.id)} />
+                  <img src='images/icon-plus.svg' className='plus-img' onClick={() => onIcrement(comment.id)} />
                 </div>
                 <div className='user-content'>
                   <div className='user-content-header'>
@@ -333,9 +333,9 @@ const Comments = () => {
                               <div className='sent-msg' key={index}>
 
                                 <div className='score-count'>
-                                  <img src='images/icon-plus.svg' className='plus-img' onClick={() => onIcrement(reply.id)} />
+                                <img src='images/icon-minus.svg' className='minus-img' onClick={() => onDecrement(reply.id)} />
                                   <p>{reply.score}</p>
-                                  <img src='images/icon-minus.svg' className='minus-img' onClick={() => onDecrement(reply.id)} />
+                                  <img src='images/icon-plus.svg' className='plus-img' onClick={() => onIcrement(reply.id)} />
                                 </div>
                                 <div className='user-content'>
                                   <div className='user-content-header'>
@@ -390,9 +390,9 @@ const Comments = () => {
                                       <div className='sent-msg' key={index}>
 
                                         <div className='score-count'>
-                                          <img src='images/icon-plus.svg' onClick={() => onIcrement()} />
+                                        <img src='images/icon-minus.svg' onClick={() => onDecrement()} />
                                           <p>{reply.score}</p>
-                                          <img src='images/icon-minus.svg' onClick={() => onDecrement()} />
+                                          <img src='images/icon-plus.svg' onClick={() => onIcrement()} />
                                         </div>
                                         <div className='user-content'>
                                           <div className='user-content-header'>
